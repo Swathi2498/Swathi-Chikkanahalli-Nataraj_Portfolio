@@ -1,11 +1,30 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 10px 0;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    top: 0;
+  }
+
 body {
     background:hsl(0 0% 93.7%);
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
+    letter-spacing: .02em;
     color: hsl(0, 0%, 0% / 1.0);
 }
+
 
 h1, h2, h3, h4 {
     line-height: 1.2;
@@ -54,7 +73,7 @@ a {
     .btn {
         background: hsla(201, 79%, 64%, 0.966);
         padding: 10px 30px;
-        display: inline;
+        display: inline-block;
         text-decoration: none;
         border-radius: 0 25%;
         color: hsl(0, 29%, 92%);
@@ -62,6 +81,7 @@ a {
     }
     .btn:visited {
         color: hsl(0,0%,100%);
+        
     }
     .btn:hover, .btn:focus{
      background: hsl(240 100% 82%);
@@ -69,6 +89,45 @@ a {
     }
     .btn:active {
     background: hsl(240 100% 82%);
-     color: hsl(240 100% 66%);
+     color: hsl(201 79% 64% 0.966);
     }
+
+    .btn-secondary {
+    background: hsl(201 79% 64%);
+    border: 2px solid #fff;
+    color: hsl(240 100% 66%);
+
+}
     
+    .container {
+        padding: 0 15px;
+        max-width: 100%;
+        width: 1300px;
+        margin: 0px auto;
+      }
+      
+      .row {
+        margin: 20px 0;
+    }
+
+    #hero{
+        padding: 20px 0;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        margin-top: 50px;
+    }
+
+    main {
+        padding-top: 60px;
+      }
+
+      nav > ul > li > a {
+        padding: 0 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+    }
+   
+   
