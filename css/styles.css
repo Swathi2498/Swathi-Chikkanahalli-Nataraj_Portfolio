@@ -1,6 +1,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
   header {
@@ -13,10 +15,15 @@
     border-bottom: 1px solid #fff;
     width: 100%;
     top: 0;
+    position: fixed;
   }
-  .logo {
-    max-width: 1px;
-  }
+
+  .logo.logo-img {
+   height: 10px;
+   width: auto;
+   padding-inline: 10px;
+}
+
 
 body {
     background:hsl(0 0% 93.7%);
@@ -102,35 +109,96 @@ a {
 
 }
     
-    .container {
-        padding: 0 15px;
-        max-width: 100%;
-        width: 1300px;
-        margin: 0px auto;
-      }
-      
-      .row {
-        margin: 20px 0;
-    }
+.container {
+    padding: 0 15px;
+    max-width: 100%;
+    width: 1300px;
+    margin: 0px auto;
+  }
+  
+  .row {
+    margin: 20px 0;
+}
 
-    #hero{
-        padding: 20px 0;
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        display: inline-block;
-        margin-top: 50px;
-    }
+section {
+    padding: 30px 0;
+    text-align: center;
+}
 
-    main {
-        padding-top: 60px;
-      }
+main {
+    padding-top: 105.99px;
+  }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+    justify-content: end;
+}
+  nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+header .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+}
+.logo {
+text-align: left;
+font-size: 1.5em;
+text-decoration: none;
+}
 
-      nav > ul > li > a {
-        padding: 0 15px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 700;
-    }
-   
-   
+.project-card {
+display: flex;
+flex-direction: column-reverse;
+gap: 2em;
+box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.29);
+border-radius: 16px;
+overflow: hidden;
+}
+
+.project-wrapper {
+display:flex;
+flex-direction: column;
+gap: 3em;
+}
+
+.project-card_content-wrapper {
+padding: 0 1em 1em 1em;
+}
+
+.hero-about .hero__media-wrapper img {
+aspect-ratio: 10/16;
+object-fit: cover;
+object-position: 0 35%;
+
+}
+
+.list ul {
+text-align: left;
+}
+
+@media (min-width: 767px) {
+.project-card {
+    flex-direction: row-reverse;
+}
+.project-card_content-wrapper,
+.project-card_media-wrapper {
+    width: 50%;
+    display: flex;
+}
+.project-card_content-wrapper {
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center ;
+}
+.project-card_media-wrapper img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+}
