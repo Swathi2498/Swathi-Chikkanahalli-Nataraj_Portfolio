@@ -1,25 +1,26 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
   }
   
   header {
     background-color: #fff;
     padding: 10px 0;
+    display: inline-block;
     padding-top: 10px;
     padding-right: 5px;
     padding-bottom: 15px;
     padding-left: 5px;
     border-bottom: 1px solid #fff;
     width: 100%;
-    top: 0;
     position: fixed;
   }
 
   .logo.logo-img {
-   height: 10px;
+   height: 80px;
    width: auto;
    padding-inline: 10px;
 }
@@ -44,14 +45,17 @@ h1, h2, h3, h4 {
 h1
 {
     font-size:2em;
+    text-align: center;
+    padding: 55px;
 }
 h2
 {
-    font-size: 1.5em;  
+    font-size: 1.5em; 
 }
 h3
 {
     font-size: 1.1em;
+    padding: 15px;
 }
 h4
 {
@@ -63,6 +67,7 @@ img {
 p
 {
     font-size: 1em;  
+    padding: 5px;
 }
 
 a {
@@ -85,30 +90,60 @@ a {
         padding: 10px 30px;
         display: inline-block;
         text-decoration: none;
-        border-radius: 0 25%;
+        border-radius: 50px;
+        border: none;
+        padding: 10px;
         color: hsl(0, 29%, 92%);
-        transition: all 0.3s ease;
+        transition: all 0.5s;
+        cursor: pointer;
+        text-align: center;
+        justify-content: center;
+        margin: 5px;
     }
     .btn:visited {
         color: hsl(0,0%,100%);
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.5s;
         
     }
     .btn:hover, .btn:focus{
      background: hsl(240 100% 82%);
      color: hsl(240 100% 66%);
+     opacity: 2;
+     top: 0;
+     right: -20px;
+     left: -20px;
+     transition: 0.5s;
+     padding-right: 25px;
     }
+
     .btn:active {
     background: hsl(240 100% 82%);
      color: hsl(201 79% 64% 0.966);
+     opacity: 2;
+     top: 0;
+     right: -40px;
+     transition: 0.5s;
+     padding: 25px;
     }
 
     .btn-secondary {
     background: hsl(201 79% 64%);
     border: 2px solid #fff;
     color: hsl(240 100% 66%);
-
+    opacity: 2;
+    right: 0;
+  
 }
-    
+
+section.hero  {
+   padding: 10px;
+   display: flex;
+   justify-content: centre;
+   text-align: justify;
+}
+
 .container {
     padding: 0 15px;
     max-width: 100%;
@@ -116,12 +151,8 @@ a {
     margin: 0px auto;
   }
   
-  .row {
-    margin: 20px 0;
-}
-
 section {
-    padding: 30px 0;
+    padding: 5px 0;
     text-align: center;
 }
 
@@ -133,7 +164,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
     justify-content: end;
 }
   nav a {
@@ -143,14 +174,24 @@ nav ul {
 }
 header .container {
     display: flex;
+    text-align: center;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5em;
     
 }
 .logo {
-text-align: left;
-font-size: 1.5em;
+text-align: justify;
+width: 101px;
+justify-content: space-between;
+align-items: center;
+display: flex;
+font-size: 0.5em;
 text-decoration: none;
+}
+
+.key-list{
+    padding: 35px;
+    justify-content: center;
 }
 
 .project-card {
@@ -178,9 +219,13 @@ object-fit: cover;
 object-position: 0 35%;
 
 }
-
+ 
+.key-list{
+   padding: 5px;
+    }
 .list ul {
 text-align: left;
+padding: 8px;
 }
 
 @media (min-width: 767px) {
