@@ -150,28 +150,30 @@ img {
 }
 
 .container {
-    padding-inline:15px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 1em;
     align-items: center;
   }
+
   .content-wrapper {
     align-items: center;
     text-align: center;
   }
 
 section {
-    padding-block: 50px;
+    padding-block: 60px;
 }
 
 main {
     padding-top: 102.12px;
   }
+
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 1em 0;
     display: flex;
     gap: 1.5em;
     justify-content: end;
@@ -184,16 +186,57 @@ nav ul {
 
 header .container {
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    align-items: normal;
     justify-content: space-between;
     gap: 0.5em;
 }
 
+.navtoggle {
+    left: 8px;
+    top: 20px;
+    font-size: 20px;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+  }
+
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle li .icon {
+    position: absolute;
+    padding-inline: 25px;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #fff;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
+    
+
 .logo {
-text-align: justify;
 width: 80px;
-justify-content: space-between;
 align-items: center;
 display: flex;
 font-size: 0.5em;
@@ -265,24 +308,35 @@ display: flex;
 
 }
 
-    
+
+
 
 @media (min-width: 767px) {
 
 header.container{
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-between;
+    padding: 50px;
 
 }
+.navtoggle li:last-child {
+    display: none;
+  }
 
 .project-card {
     flex-direction: row-reverse;
 }
 .project-card_content-wrapper,
 .project-card_media-wrapper {
-    width: 50%;
+    width: 100%;
     display: flex;
 }
+
+.media-wrapper{
+    width: 100%;
+    display: flex;
+}
+
 .project-card_content-wrapper {
     padding: 2em 2em 2em 0;
 }
@@ -297,7 +351,7 @@ header.container{
 .list-wrapper{
     display: flex;
     gap: 3em;
-    }
+    }i
 
 .list  {
     width: 50%;
@@ -312,10 +366,23 @@ header.container{
 .container{
     max-width: 1200px;
     margin-inline: auto;
+
 }
 
-.container-wrapper{
-    max-width: 700px;
+.media-wrapper{
+    width: 100%;
+   
+}
+ .navtoggle li:last-child {
+    display: block;
+  }
+  
+  nav > ul {
+    margin: 1em 0;
+  }
+
+.container{
+    max-width: 1200px;
     margin-inline: auto;
 }
 
@@ -329,3 +396,20 @@ header.container{
     }
 
 }
+
+@media (min-width: 641px) {
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+    
+    .list  {
+        width: 100%;
+        gap: 3em;
+    }
+    
+    .container-skills-tools{
+        padding-inline: 10px;
+        }
+    
+    }
