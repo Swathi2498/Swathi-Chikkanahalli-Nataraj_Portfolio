@@ -1,69 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PlutoPay</title>
+      <title>PlutoPay</title>
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/86e4711f5a.js" crossorigin="anonymous"></script>
+   </head>
 
-    <script src="https://kit.fontawesome.com/86e4711f5a.js" crossorigin="anonymous"></script>
-   
-</head>
+ <body>
+     <header>
+         <div class="container">
+             <div class="navtoggle" id="myNavtoggle">
 
-<body>
-    <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-
-                  <a href="index.html" class="logo">  <img src="via.images/Logo_AC.svg" alt="Swathi Nataraj">
-                  </a>
-               <nav>
-                    <ul class="navigation">
-                        <li><a href="index.html">Works</a>
-                        </li>
-                           <li>
-                                <a href="about.html">About</a> 
-                           </li>
-                          <li>
-                                <a href="#contact"onclick="menuToggle()">Contact</a>
-                            </li>
-                           <li>
-                                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-                                   <i
-                                     class="fas fa-bars">
-                                   </i>
+                  <a href="index.html" class="logo">  <img src="via.images/Logo_AC.svg" alt="Swathi Nataraj"> </a>
+                 <nav>
+                      <ul class="navigation">
+                         <li><a href="index.html">Works</a></li>
+                         <li><a href="about.html">About</a></li>
+                         <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                         <li id="click_advance">
+                               <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                                  <i class="fas fa-bars"></i>
                               </a>
                           </li>
-                        </li>
-                    </ul> 
-               </nav>
-            </div>
-        </div> 
-    </header> 
+                      </ul> 
+                  </nav>
+               </div>
+          </div> 
+      </header> 
 
-    <main>
+     <main>
         <section class="hero-plutopay" id="hero-plutopay">
-        <div class="container">
-            <div class="content-wrapper">
-            <h1>PlutoPay</h1>
-            <div>
-                <h2>Project Summary</h2>
-            </div>
-            <p>"A responsive web app in which users are allowed to shop, transfer money, and more without a debit or credit card or 
-                the need to visit a physical bank or store. This app helps the users to track their expenses and also help them to 
-                create a categorize of their spending into different wallets (transportation, food, etc.) so users'
-                know exactly where their money goes, they can set a limit to take control of their expenditures and also allows users to
-                invest and manage their money in various financial markets, including stocks, bonds, mutual funds and cryptocurrencies".
-            </p>
-            </div>
-        </section>
+         <div class="container">
+             <div class="content-wrapper">
+                    <h1>
+                      PlutoPay
+                   </h1>
+                  <div>
+                         <h2>
+                          Project Summary
+                      </h2>
+                  </div>
+                  <p>"A responsive web app in which users are allowed to shop, transfer money, and more without a debit or credit card or 
+                      the need to visit a physical bank or store. This app helps the users to track their expenses and also help them to 
+                       create a categorize of their spending into different wallets (transportation, food, etc.) so users'
+                       know exactly where their money goes, they can set a limit to take control of their expenditures and also allows users to
+                       invest and manage their money in various financial markets, including stocks, bonds, mutual funds and cryptocurrencies".
+                   </p>
+              </div>
+          </div>
+     </section>
 
         <section class="hero-statment" id="hero-statment">
             <div class="container">
@@ -154,7 +149,7 @@
          </div>
 
           <div class="media-wrapper">
-                <img src="via.images/user persona_01.png" alt="user_persona_01">
+                <img src="via.images/user_persona_01.png" alt="user_persona_01">
           </div>
 
           <div class="media-wrapper">
@@ -223,22 +218,23 @@
 
     <section class="hero-wireframes" id="hero-wireframes">
         <div class="container">
-            <div class="content-wrapper">
-            <div>
-                <h2> Wireframes </h2>
-            </div>
-            <p>
-                At this stage, I initiated the wireframe design process for my app. To ensure a comprehensive exploration of ideas, 
-                I began by sketching simple drawings to capture and organize my initial concepts before proceeding to design in Figma.
-            </p>
-            <div class="btn-wrapper">
-                <a href="https://drive.google.com/file/d/1PrJTfLWEMnmFo4l2W9R6UNwWVSiMUvHS/view" class="btn btn-secondary">View Low-Fidelity:Wireframes and Prototyping</a>
-                <a href="https://drive.google.com/file/d/1HyO8VoM1VuIaC4sEQa2uoQeirSXxmbA1/view" class="btn btn-secondary">View Mid-Fidelity:Wireframes and Prototyping</a>
-            </div>
-            </div>
-        </div>
-        </div>
-    </section>
+           <div class="content-wrapper">
+              <div>
+                  <h2> 
+                        Wireframes 
+                  </h2>
+              </div>
+               <p>
+                   At this stage, I initiated the wireframe design process for my app. To ensure a comprehensive exploration of ideas, 
+                    I began by sketching simple drawings to capture and organize my initial concepts before proceeding to design in Figma.
+             </p>
+             <div class="btn-wrapper">
+                    <a href="https://drive.google.com/file/d/1PrJTfLWEMnmFo4l2W9R6UNwWVSiMUvHS/view" class="btn btn-secondary">View Low-Fidelity:Wireframes and Prototyping</a>
+                    <a href="https://drive.google.com/file/d/1HyO8VoM1VuIaC4sEQa2uoQeirSXxmbA1/view" class="btn btn-secondary">View Mid-Fidelity:Wireframes and Prototyping</a>
+             </div>
+         </div>
+      </div>
+ </section>
 
     <section class="hero-usability-testing" id="hero-usability-testing">
         <div class="container">
@@ -319,29 +315,30 @@
     <section class="hero-contemplation" id="hero-contemplation">
         <div class="container">
             <div class="content-wrapper">
-            <div>
-                <h2> Contemplation </h2>
-            </div>
-            <P>
-                  In the process of my journey as a UX designer, PlutoPay emerged as a project that gradually took shape. During my training,
-                  I delved into various UX research methodologies, adopting a mindset of unbiased exploration and avoiding preconceived notions.
-                  Engaging in interviews and usability tests, I discovered the diverse perspectives and mental models of participants, 
-                  witnessing how their feedback and experiences influenced and refined the project's initial idea. This journey was not 
+              <div>
+                  <h2> Contemplation </h2>
+              </div>
+             <p>
+                   In the process of my journey as a UX designer, PlutoPay emerged as a project that gradually took shape. During my training,
+                   I delved into various UX research methodologies, adopting a mindset of unbiased exploration and avoiding preconceived notions.
+                   Engaging in interviews and usability tests, I discovered the diverse perspectives and mental models of participants, 
+                   witnessing how their feedback and experiences influenced and refined the project's initial idea. This journey was not 
                   without challenges, but through perseverance and problem-solving, I navigated the obstacles encountered. Overall, PlutoPay 
-                  represents a testament to the transformative power of UX research and the iterative nature of design. Through contemplation, 
-                  I am committed to continuously improving and iterating upon PlutoPay,
-                  ensuring it remains a user-centric and impactful solution.
+                   represents a testament to the transformative power of UX research and the iterative nature of design. Through contemplation, 
+                   I am committed to continuously improving and iterating upon PlutoPay,
+                   ensuring it remains a user-centric and impactful solution.
                  <span>
-                    In addition to the progress made with PlutoPay, this project has also served as a valuable learning opportunity for me as a 
-                    UX designer. I have embraced the mindset of continuous learning, recognizing that the process is not yet complete. 
-                    There is still much to explore, refine, and iterate upon. With each step, I am committed to further enhancing the user 
-                    experience, incorporating new insights, 
-                    and evolving PlutoPay into a truly impactful and user-centric solution.
-                 </span>
-            </P>
-        </div>
-        </div>
-    </section>
+                      In addition to the progress made with PlutoPay, this project has also served as a valuable learning opportunity for me as a 
+                      UX designer. I have embraced the mindset of continuous learning, recognizing that the process is not yet complete. 
+                      There is still much to explore, refine, and iterate upon. With each step, I am committed to further enhancing the user 
+                     experience, incorporating new insights, 
+                      and evolving PlutoPay into a truly impactful and user-centric solution.
+                  </span>
+               </p>
+          </div>
+      </div>
+     </section>
+  </main>
 
     <footer id="contact">
         <div class="container">
@@ -359,13 +356,15 @@
 
     </footer>
 
-    <script>
+  <script>
         src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"
   
-   </script>
-   <script src="js/scripts.js"></script>
+  </script>
+   <script >
+      src="js/scripts.js"
+  </script>
 
 </body>
 </html>
@@ -464,5 +463,3 @@
 
 
 
-</body>
-</html>

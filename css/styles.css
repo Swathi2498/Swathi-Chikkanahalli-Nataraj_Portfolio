@@ -89,7 +89,7 @@ img {
     }
 
     .btn {
-        background: hsla(201, 79%, 64%, 0.966);
+        background: hsla(201, 79%, 35%);
         padding: 10px 30px;
         display: inline-block;
         text-decoration: none;
@@ -111,8 +111,8 @@ img {
         
     }
     .btn:hover, .btn:focus{
-     background: hsl(240 100% 82%);
-     color: hsl(240 100% 66%);
+     background: hsl(240, 100%, 65.69%);
+     color: hsl(240, 100%, 96%);
      opacity: 2;
      top: 0;
      right: -20px;
@@ -122,8 +122,8 @@ img {
     }
 
     .btn:active {
-    background: hsl(240 100% 82%);
-     color: hsl(201,79%,64%,0.966);
+    background: hsl(240, 100%, 96.47%);
+     color: hsl(201.22, 79.46%, 36.27%);
      opacity: 2;
      top: 0;
      right: -40px;
@@ -134,7 +134,7 @@ img {
     .btn-secondary {
     background: hsl(201 79% 64%);
     border: 2px solid #fff;
-    color: hsl(240 100% 66%);
+    color: hsl(240, 100%, 44.9%);
     opacity: 2;
     right: 0;
 }
