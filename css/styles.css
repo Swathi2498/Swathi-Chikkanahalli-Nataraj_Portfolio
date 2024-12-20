@@ -74,7 +74,7 @@ img {
 }
 
  a {
-    color: hsl(240 100% 82%);
+    color: hsl(240, 100%, 69.02%);
     }
     a:visited {
     color: hsl(240 100% 82%);
@@ -133,7 +133,7 @@ img {
 
     .btn-secondary {
     background: hsl(201 79% 64%);
-    border: 2px solid #fff;
+    border: 2px solid hsl(201 79% 64%);
     color: hsl(240, 100%, 44.9%);
     opacity: 2;
     right: 0;
@@ -285,20 +285,16 @@ gap: 1em;
     padding: 15px;
      }  
 
-.list-wrapper {
-text-align: left;
-display: flex;
-}
-
+    
 .container-skills-tools{
     text-align:center;
+
     }
     
 .container-list-wrapper   {
     text-align:left;
     display: flex;
-    gap: 3em;
-
+    flex-direction: row;
 }
 
 @media (min-width: 767px) {
@@ -309,6 +305,7 @@ header.container{
     padding: 50px;
 
 }
+
 header .navtoggle {
     display: flex;
     align-items: center;
@@ -347,8 +344,8 @@ header .navtoggle {
     }
 .list-wrapper{
     display: flex;
-    gap: 3em;
-    }i
+    gap: 15em;
+    }
 
 .list  {
     width: 50%;
@@ -388,13 +385,14 @@ header .navtoggle {
     margin-inline: auto;
 }
 
+
 .list  {
     width: 100%;
     gap: 3em;
 }
 
 .container-skills-tools{
-    padding-inline: 10px;
+    padding-block: 150px;
     }
 
 }
@@ -404,6 +402,12 @@ header .navtoggle {
     .navtoggle li:not(:last-child) {
         display: inline-block;
       }
+
+      .container-list-wrapper   {
+        gap: 8em;   
+        padding-left: 10px;
+        padding-right: 20px;
+    }
     
     .list  {
         width: 100%;
@@ -411,7 +415,8 @@ header .navtoggle {
     }
     
     .container-skills-tools{
-        padding-inline: 10px;
+        padding-left: 190px;
+        padding-right: 80px;
         }
     
     }
